@@ -1,0 +1,101 @@
+.main {
+	background: url("../images/main.jpg") center 100% no-repeat;
+	background-size: cover;
+	height: em(768);
+	position: relative;
+
+	&:before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		background: rgba(0,0,0,0.3);
+	}
+
+	.container {
+		position: relative;
+		color: #ffffff;
+	}
+
+	h1 {
+		font-size: em(80);
+		margin-top: em(184,110);
+		line-height: em(88,80);
+		font-weight: 600;
+		margin-bottom: 0.34em;
+	}
+
+	h2 {
+		font-size: em(30);
+		font-weight: 400;
+		color: rgba(255,255,255,0.7);
+		line-height: em(40,30);
+		margin-bottom: em(80,29);
+	}
+
+	.logo {
+		width: em(123);
+		position: absolute;
+		right: em(170);
+		bottom: em(-75);
+	}
+
+	.play-button-container {
+		position: absolute;
+		top: 50%;
+		margin-top: em(-36);
+		right: 22.2%;
+	}
+
+	.btn-play {
+		display: block;
+		width: em(70);
+		height: em(70);
+		border-radius: 50%;
+		background-color: rgba(255,255,255,0.7);
+		position: relative;
+		@include flexbox();
+		@include flex_util(middle,center);
+		@include transition(background-color,0.2s);
+
+		&:hover {
+			background-color: rgba(255,255,255,1);
+
+			&:before {
+				animation: pulse 0.8s infinite;
+			}
+		}
+
+		@keyframes pulse {
+			0% { transform: scale(1); }
+			50% { transform: scale(1.1); }
+			100% { transform: scale(1); }
+		}
+
+		&:before {
+			content: '';
+			display: block;
+			width: em(112);
+			height: em(112);
+			position: absolute;
+			left: em(-21);
+			top: em(-21);
+			border: em(2) solid rgba(255,255,255,0.2);
+			border-radius: 50%;
+
+		}
+
+		&:after {
+			content: '';
+			display: inline-block;
+			width: 0;
+			height: 0;
+			border-left: em(13) solid #000;
+			border-top: em(10) solid transparent;
+			border-bottom: em(10) solid transparent;
+			margin-left: em(5);
+		}
+	}
+}

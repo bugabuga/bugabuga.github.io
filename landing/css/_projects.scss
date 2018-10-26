@@ -1,0 +1,297 @@
+.projects {
+	padding-top: em(200);
+
+	&-slider {
+		height: em(936);
+		margin-top: em(80);
+	}
+
+	&-steps {
+
+		.col {
+			width: em(330);
+			flex: 0 0 em(330);
+		}
+
+		&-container {
+			padding-top: em(200);
+
+			.heading {
+				line-height: em(48,40);
+
+				&-description {
+					margin-bottom: em(80,40);
+				}
+			}
+		}
+
+		&-number {
+			font-size: em(104);
+			line-height: em(125,104);
+			margin-bottom: em(70,104);
+			color: #9EA0A6;
+			opacity: 0.2;
+			font-weight: 500;
+			position: relative;
+
+			&:after {
+				content: '';
+				width: 81%;
+				height: em(3,104);
+				background-color: #EAEAEA;
+				position: absolute;
+				bottom: -40px;
+				left: 0;
+			}
+		}
+
+		&-title {
+			font-size: em(26);
+			line-height: em(32,26);
+			margin-bottom: em(24,26);
+		}
+
+		&-description {
+			color: #222222;
+			opacity: 0.3;
+			font-size: em(18);
+			line-height: em(28,18);
+		}
+	}
+
+	&-video-container {
+
+		.heading {
+			font-size: em(40);
+			line-height: em(48,40);
+		}
+	}
+
+	&-video {
+		margin-top: em(68);
+
+		&-file {
+			margin-bottom: em(45);
+		}
+
+		.delta-ukraine {
+			color: #9EA0A6;
+			font-size: em(18);
+			line-height: em(24,18);
+			font-weight: 500;
+			margin-top: em(20,18);
+		}
+
+		&-title {
+			color: #222222;
+			font-size: em(20);
+			line-height: em(32,20);
+		}
+	}
+
+	.btn-container {
+		margin-top: em(80);
+		margin-bottom: em(200);
+	}
+
+	.btn-more {
+		color: #222222;
+		font-size: em(14);
+		line-height: em(24);
+		padding: em(10) em(20) em(7);
+		margin-bottom: em(60);
+
+		&:hover {
+			background-color: rgba(0,0,0,0.1);
+		}
+
+		&:before {
+			content: '';
+			display: inline-block;
+			width: em(19);
+			height: em(19);
+			margin-right: em(10);
+			vertical-align: em(-4);
+			background-image: url("../images/refresh.svg");
+			background-repeat: no-repeat;
+		}
+	}
+
+	//
+	// Bottom Images
+	//
+
+	&-bottom {
+		margin-left: 0;
+		margin-right: 0;
+
+		&-image {
+			display: block;
+			height: em(385);
+			background-repeat: no-repeat;
+			background-size: cover;
+
+			&._image-1 {
+				background-image: url('../images/projects/projects_bottom_1.png');
+			}
+
+			&._image-2 {
+				background-image: url('../images/projects/projects_bottom_2.png');
+			}
+
+			&._image-3 {
+				background-image: url('../images/projects/projects_bottom_3.png');
+			}
+
+		}
+	}
+}
+
+//
+// 	SWIPER - slider for projects overview
+//	settings for slider elements and image
+//
+
+.swiper {
+
+	&-container {
+		width: 100%;
+		height: 100%;
+	}
+
+	&-slide {
+		background-position: center;
+		background-size: cover;
+
+		@include flexbox();
+	}
+
+	&-image {
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 100%;
+		width: 58%;
+	}
+
+	&-description {
+		width: 42%;
+		background-color: #fff;
+	}
+
+	&-button-next,
+	&-button-prev {
+		top: auto;
+		bottom: em(33,22);
+		margin-top: 0;
+		width: em(60,22);
+		height: em(60,22);
+		background-color: rgb(255,255,255);
+		background-size: 30%;
+		border-radius: 50%;
+		opacity: 0.7;
+		transition: opacity 0.3s ease-out;
+		line-height: em(58,22);
+		text-align: center;
+		font-size: em(22);
+
+		&:hover {
+			opacity: 1;
+		}
+
+		&.swiper-button-black {
+			background-image: none;
+		}
+	}
+
+	&-button-disabled {
+		opacity: 0.3;
+	}
+
+	&-button-next {
+		right: 47%;
+		margin-right: em(-40);
+	}
+
+	&-button-prev {
+		left: 52.6%;
+		margin-left: em(-40);
+	}
+
+}
+
+//
+// 	SWIPER - slider for projects overview
+//	settings for text part of slider
+//
+
+.project {
+	padding: em(160) em(110);
+
+	&-name {
+		font-size: em(40);
+		line-height: em(32,40);
+		margin-bottom: em(32,40);
+	}
+
+	&-title {
+		color: #777777;
+		font-size: em(20);
+		line-height: em(24,20);
+		margin-bottom: em(8,20);
+	}
+
+	&-caption {
+		color: #222222;
+		font-size: em(20);
+		line-height: em(32,20);
+		margin-bottom: em(32,20);
+	}
+
+	&-services {
+		color: #222222;
+		font-size: em(20);
+		line-height: em(24,20);
+
+		ul {
+			list-style-type: none;
+			padding-left: 0;
+
+			li {
+				line-height: em(38,20);
+
+				&:before {
+					content: '\25AA';
+					color: $main_color_red;
+					font-size: em(20);
+					position: relative;
+					top: 2px;
+					margin-right: em(12,20);
+				}
+			}
+		}
+	}
+
+	&-year,
+	&-area {
+		font-size: em(64);
+		line-height: em(77,64);
+		font-weight: 500;
+	}
+
+	&-area {
+		position: relative;
+
+		&:after {
+			content: 'm2';
+			font-size: em(24,64);
+			vertical-align: em(28,24);
+			line-height: em(24,24);
+		}
+	}
+
+	&-subtitle {
+		color: #777777;
+		font-size: em(18);
+		line-height: em(16,18);
+	}
+}

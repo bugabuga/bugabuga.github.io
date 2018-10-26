@@ -1,0 +1,63 @@
+.about {
+	padding-top: em(200);
+
+	.heading-description {
+		margin-bottom: em(37);
+	}
+
+	&-description {
+		font-size: em(20);
+		line-height: em(22px, 14px);
+		text-align: justify;
+
+		& + .about-description {
+			margin-top: em(15,14);
+		}
+	}
+
+	&-image {
+		position: relative;
+		right: em(-137);
+		top: em(-70px);
+	}
+
+	.numbers {
+
+		&-col {
+			text-align: center;
+
+			&._projects {
+				flex: 0 0 12.66667%;
+				max-width: 12.66667%;
+				margin-right: 11%;
+			}
+
+			&._clients {
+				margin-right: 9%;
+			}
+
+			&._awards {
+				margin-right: 9%;
+			}
+		}
+
+		&-amount {
+			font-size: em(104);
+			font-weight: 500;
+			line-height: em(133,104);
+		}
+
+		&-projects {
+			font-size: em(18);
+			line-height: em(16);
+			color: #222222;
+			opacity: .5;
+			margin-top: em(-12,18);
+		}
+	}
+
+	.btn-container {
+		padding-top: em(76);
+		padding-bottom: em(144);
+	}
+}

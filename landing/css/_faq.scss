@@ -1,0 +1,87 @@
+.faq {
+
+	.heading {
+		font-weight: 500;
+
+		&-description {
+			margin-bottom: em(48,40);
+		}
+	}
+}
+
+.card {
+	border-left: 0;
+	border-right: 0;
+
+	&:first-of-type {
+		border-top: 0;
+		border-left: 0;
+		border-right: 0;
+	}
+
+	&:last-of-type {
+		border-bottom: 0;
+	}
+
+	&-header {
+		background: none;
+		border: none;
+		padding: 0;
+	}
+
+	&-body {
+		font-size: em(18);
+		padding: em(32) em(77);
+	}
+
+	.btn-faq {
+		font-size: em(20);
+		line-height: em(32,20);
+		padding: em(32,20) em(77,20);
+		color: #222222;
+		width: 100%;
+		text-align: left;
+		position: relative;
+		background-color: rgba(0,0,0,0.02);
+
+		&.collapsed {
+			background-color: rgba(0,0,0,0);
+
+			&:after {
+				transform: rotate(0);
+			}
+		}
+
+		&:hover {
+			background-color: rgba(0,0,0,0.05);
+		}
+
+		&:before {
+			content: '';
+			display: block;
+			width: em(29,20);
+			height: em(2,20);
+			background-color: #222222;
+			position: absolute;
+			top: 50%;
+			left: em(30,20);
+			margin-top: em(-1,20);
+		}
+
+		&:after {
+			content: '';
+			background-image: url("../images/plus.svg");
+			background-repeat: no-repeat;
+			background-size: contain;
+			display: block;
+			width: em(24,20);
+			height: em(24,20);
+			position: absolute;
+			top: 50%;
+			right: em(30,20);
+			margin-top: em(-12,20);
+			transform: rotate(135deg);
+			@include transition(transform, 0.4s);
+		}
+	}
+}

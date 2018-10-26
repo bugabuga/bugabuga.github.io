@@ -1,0 +1,19 @@
+@import "variables";
+@import "libs/bootstrap/bootstrap.scss";
+
+@import "../fonts/fonts.css";
+
+@import "mixins";
+@import "normalize";
+
+@import "buttons";
+@import "inputs";
+@import "global";
+@import "navigation";
+
+@import "main";
+@import "about";
+@import "services";
+@import "projects";
+@import "faq";
+@import "footer";

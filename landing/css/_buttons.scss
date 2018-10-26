@@ -1,0 +1,44 @@
+button,
+.btn,
+a.btn {
+	padding: $btn_padding_vertical $btn_padding_horizontal;
+	font-size: em(14);
+	font-weight: 500;
+
+	&:hover {
+		cursor: pointer;
+	}
+
+	&:focus {
+		box-shadow: none;
+	}
+
+	&.btn-faq {
+		padding: 0;
+		font-weight: 400;
+		outline: none;
+	}
+}
+
+.btn,
+a.btn {
+	&-red {
+		background: $btn_color_background;
+		color: $btn_color_text;
+
+		&:hover {
+			background: $btn_color_background_hover;
+		}
+	}
+
+	&-outline {
+		border: 2px solid $btn_outline_color_background_hover;
+		background: $btn_outline_color_background;
+		color: $btn_outline_color_text;
+
+		&:hover {
+			background: $btn_outline_color_background_hover;
+			color: $btn_outline_color_text_hover;
+		}
+	}
+}

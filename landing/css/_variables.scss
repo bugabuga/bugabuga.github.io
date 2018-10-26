@@ -1,0 +1,56 @@
+//
+// COLORS
+//
+
+$main_color_red:						#da1411;
+
+//
+// INPUTS
+//
+// Buttons
+
+$btn_padding_horizontal: 				5em;
+$btn_padding_vertical: 					1.53em;
+
+$btn_color_background: 					$main_color_red;
+$btn_color_background_hover: 			darken($btn_color_background,15%);
+$btn_color_text:						#ffffff;
+$btn_color_text_hover:					#ffffff;
+
+$btn_outline_color_background: 			transparent;
+$btn_outline_color_background_hover: 	#ffffff;
+$btn_outline_color_text:				#ffffff;
+$btn_outline_color_text_hover:			#000000;
+
+$btn_border:							none;
+$btn_border_radius:						0;
+
+
+//
+// GLOBAL
+//
+// Container
+
+$grid-breakpoints: (
+		xs: 0,
+		sm: 600px,
+		md: 800px,
+		lg: 1000px,
+		xl: 1280px,
+		wd: 1920px
+);
+
+$container-max-widths: (
+		sm: 600px,
+		md: 800px,
+		lg: 1000px,
+		xl: 1400px,
+		wd: 1610px
+);
+
+//$section_width:					1500px;
+//$section_width_desktop:			1200px;
+//$section_width_tablet:			1024px;
+
+$section_padding_horizontal:	0;
+$section_padding_vertical:		4rem;
