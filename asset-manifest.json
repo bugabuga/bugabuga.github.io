@@ -1,10 +1,11 @@
 {
-  "main.css": "static/css/main.19570bd8.css",
-  "main.css.map": "static/css/main.19570bd8.css.map",
-  "main.js": "static/js/main.0e9ee323.js",
-  "main.js.map": "static/js/main.0e9ee323.js.map",
+  "main.css": "static/css/main.ba35c513.css",
+  "main.css.map": "static/css/main.ba35c513.css.map",
+  "main.js": "static/js/main.99e0fdd6.js",
+  "main.js.map": "static/js/main.99e0fdd6.js.map",
   "static/media/facebook.svg": "static/media/facebook.a99c1e85.svg",
-  "static/media/illustration.jpg": "static/media/illustration.03d7d49c.jpg",
+  "static/media/illustration.jpg": "static/media/illustration.5c59f5cc.jpg",
+  "static/media/illustration.svg": "static/media/illustration.42f72418.svg",
   "static/media/image_1.svg": "static/media/image_1.182b6181.svg",
   "static/media/image_2.svg": "static/media/image_2.94105e2b.svg",
   "static/media/image_3.svg": "static/media/image_3.5bdd6e96.svg",
@@ -14,6 +15,9 @@
   "static/media/kununu.svg": "static/media/kununu.88a350fa.svg",
   "static/media/main_image.png": "static/media/main_image.4e40f85c.png",
   "static/media/plus.svg": "static/media/plus.e0eb4a80.svg",
+  "static/media/universitet.svg": "static/media/universitet.99471f04.svg",
+  "static/media/universitet_2.svg": "static/media/universitet_2.5a0b4670.svg",
+  "static/media/universitet_3.svg": "static/media/universitet_3.2e50f20c.svg",
   "static/media/x.svg": "static/media/x.7d1ef6b8.svg",
   "static/media/youtube.svg": "static/media/youtube.aedbe14a.svg"
 }
