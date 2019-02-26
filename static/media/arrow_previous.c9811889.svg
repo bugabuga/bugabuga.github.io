@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="14px" viewBox="0 0 19 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>icon .arrow_next</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="24" height="24"></rect>
+    </defs>
+    <g id="1360x1024px" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Step-2.-Stage" transform="translate(-960.000000, -729.000000)">
+            <g id="Right_bar" transform="translate(920.000000, 128.000000)">
+                <g id="button_XL" transform="translate(1.000000, 576.000000)">
+                    <g id="button">
+                        <g id="button_title" transform="translate(37.000000, 20.000000)">
+                            <g id="icon-.arrow_next" transform="translate(12.000000, 12.000000) scale(-1, 1) translate(-12.000000, -12.000000) ">
+                                <mask id="mask-2" fill="white">
+                                    <use xlink:href="#path-1"></use>
+                                </mask>
+                                <g id="base"></g>
+                                <g id="arrow_next" mask="url(#mask-2)" stroke="#222222" stroke-width="2">
+                                    <g transform="translate(3.000000, 7.000000)" id="Shape">
+                                        <path d="M8,13 L8,-3" transform="translate(8.000000, 5.000000) rotate(-270.000000) translate(-8.000000, -5.000000) "></path>
+                                        <polyline stroke-linecap="square" transform="translate(15.000000, 5.000000) rotate(-270.000000) translate(-15.000000, -5.000000) " points="20 7.5 15 2.5 10 7.5"></polyline>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
